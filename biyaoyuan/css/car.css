@@ -1,0 +1,66 @@
+/*--- by_car 购物车 ---*/
+#nav{border:1px solid #eae4e8;}
+#by_car{background: #fff;}
+#by_car h1{margin-top: 14px;}
+#by_body #nav .car{overflow: hidden;}
+.nav .car{line-height: 0;}
+.nav .car p{ width: 590px;height: 50px;background: url(../img/car_steps.png);}
+.nav{height:98px;width:1200px;margin:0 auto;}
+.nav h1{width: 231px;height: 50px;float:left;}
+.nav img{display: inline-block;width: 231px;height: 50px;}
+.nav .car{float:right;}
+.nav .car span{display: inline-block; height: 19px;font-size:12px;margin: 10px 0 0 75px;text-align: center;color: #ccc;}
+
+.nav .car .first{color: #666;}
+#by_car #main{min-height:400px; height:auto!important; height:400px; }
+#by_car .main{width:1200px; min-height:400px; height:auto!important; height:400px; margin: 0 auto; text-align: center;overflow: hidden;}
+#by_car .main .null p{font-weight:900;font-size:14px;line-height: 36px;text-align: center;color: #333;background: url(../img/by_car.png) no-repeat 375px 0;margin: 164px auto 24px;}
+#by_car .main .null p a{display: inline;background:none;color:blue;}
+#by_car .main .null a{display: block; width:120px;line-height: 40px;text-align: center; background: #724a88;margin: 0 auto; color: #fff;font-size: 14px;}
+.main .cart{display: none;}
+.main .cart{ color: #333;}
+.main .cart h3{padding: 34px 0 14px;border-bottom: 1px solid #d5cdda;text-align: left;font-size: 18px;color: #523669;font-weight:normal;}
+
+.main .cart p{line-height: 38px;text-align: left;}
+.main .cart input{margin: 0 10px;}
+.main .cart i{width: 120px;display: inline-block;font-size:12px;font-style:normal;}
+.main .cart span{font-size:12px;display: inline-block;text-align: center;}
+.main .cart .infor{width: 368px;text-align: left;}
+.main .cart .infor h4{font-weight:normal;}
+.main .cart .price{width: 138px;}
+.main .cart .count{width: 108px;}
+.main .cart .pack{width: 248px;}
+.main .cart .total{width: 118px;}
+.main .cart .oper{width: 58px;}
+.main .cart ul li{float: left;font-size:12px;}
+.main .cart .title{width: 1200px;line-height: 38px;text-align: left;overflow:hidden;background: #eee;}
+.main .cars{border-bottom: 1px dashed #ccc;overflow: hidden;}
+.main .cars li{text-align: center;line-height: 120px; display: block;}
+.main .cars li img{width: 100px;margin: 10px;}
+.main .cars .infor{line-height: 20px;margin-top: 28px;}
+.main .cars .infor h3{color: #333;}
+.main .cars .infor span{display: block;text-align: left;color: #999;}
+.main .cars .count{width: 108px;line-height: 28px;border: 1px solid #b3b3b3;margin-top: 48px;}
+.main .cars .count a{display: inline-block; width: 28px;height: 28px;}
+.main .cars .count .cut{border-right: 1px solid #e8e8e8; float: left;}
+.main .cars .count .add{border-left: 1px solid #e8e8e8;float: right;}
+.main .cars .price{color: #f49f26;}
+.main .cars .pack{color: #999;}
+.main .cars .pack a{font-size:12px;color:#666;}
+.main .cars .total{color: #f49f26;}
+.main .cars .total a{font-size:12px;color:#666;}
+.main .cars .oper{font-size: 24px;}
+.main .cars .oper a{color:#666;}
+.main .cars .oper a:hover{color: #333;}
+.main .del{height: 74px;}
+.main .del>span{float: right;width: 340px;line-height: 22px;margin-top: 14px;}
+.main .del>span span{padding: 0 10px;font-size:14px;}
+.main .del>span .bao{margin-left: 95px;}
+.main .del span b{color: #f49f26;}
+
+
+.main .go{background: #eee;border-top: 1px solid #ddd;}
+.main .go>span{float: right;}
+.main .go a{display: inline-block; width: 102px;line-height: 32px; font-size: 16px;color: #fff;background: #724a88;margin: 10px;text-align: center;}
+.main .go span a{width: 82px;height: 32px;background: #f49f26;}
+.main .go span .money{font-size: 20px;color: #f49f26;}

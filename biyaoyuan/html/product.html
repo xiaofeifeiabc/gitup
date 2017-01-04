@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+	<link rel="stylesheet" href="../css/same.css"/>
+	<link rel="stylesheet" href="../css/different.css"/>
+    <script src="../script/jquery-1.11.3.js"></script>
+	<script src="../script/list.js"></script>
+	<script src="../script/login.js"></script>
+	<script src="../script/index.js"></script>
+	<script src="../script/product.js"></script>
+	<script src="../script/cookie.js"></script>
+	<script src="../script/move2.js"></script> 
+</head>
+</head>
+<body id="product_body">
+	<!-- 顶部 -->
+	<div id="header">
+		<ul class="header1">
+			<li>
+				<a href="../index.html">首页</a>
+			</li>
+			<li>
+				<a href="javascript:;">商家中心</a>
+			</li>
+			<li>
+				<a href="javascript:;">平台政策</a>
+			</li>
+			<li class="tou1">
+				<a href="javascript:;">必要手机版</a>
+				<span style="display:none"><img src="../img/b_ewm.bmp"/></span>
+			</li>
+		</ul>
+		<ul class="header2">
+			<li>欢迎来到必要，请   <a href="login.html">登录</a></li>
+			<li class="reg"><a href="registered.html">注册</a></li>
+			<li class="person">
+				<a href="javascript:;">个人中心<em> ^ </em></a>
+				<ul>
+					<i></i>
+					<li><a href="car.html">我的订单</a></li>
+					<li><a href="javascript:;">个人设置</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+				<!-- nav 导航栏 -->
+										
+	<div id="nav">
+		<div class="nav">
+			<h1><a href="../index.html"><img src="../img/logo.png"/></a></h1>
+			<div class="car">
+				<a href="car.html"><i></i>购物车 <span>0</span> 件商品</a><!-- span购物车的数量 -->
+			</div>
+			<ul class="nav_top">
+				<li>
+					<p class="all">全部商品列表</p>
+					
+				</li>
+				<li>
+					<a href="../index.html">首页</a>
+					<span></span>
+				</li>
+				<!-- 消失的 -->
+				<div class="perv_li">
+					<li class="disappear dis_li1">
+						<a href="list.html">眼镜</a>
+						<span></span>
+						<ul style="position:fixed;left:355px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">太阳镜</a></li>
+							<li><a href="list.html">旅行镜</a></li>
+							<li><a href="list.html">近视镜</a></li>
+						</ul>
+					</li>
+					<li  class="disappear dis_li2">
+						<a href="list.html">服装</a>
+						<span></span>
+						<ul style="position:fixed;left:425px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">男装</a></li>
+							<li><a href="list.html">女装</a></li>
+							<li><a href="list.html">配饰</a></li>
+						</ul>
+					</li>
+					<li  class="disappear dis_li3">
+						<a href="list.html">婴童</a>
+						<span></span>
+						<ul style="position:fixed;left:495px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">母婴</a></li>
+							<li><a href="list.html">儿童</a></li>
+							<li><a href="list.html">书包</a></li>
+							<li><a href="list.html">亲子</a></li>
+							<li><a href="list.html">单车</a></li>
+						</ul>
+					</li>
+					<li  class="disappear dis_li4">
+						<a href="list.html">鞋靴</a>
+						<span></span>
+						<ul style="position:fixed;left:565px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">男鞋</a></li>
+							<li><a href="list.html">女鞋</a></li>
+							<li><a href="list.html">童鞋</a></li>
+						</ul>
+					</li>
+					<li  class="disappear dis_li5">
+						<a href="list.html">运动</a>
+						<span></span>
+						<ul style="position:fixed;left:635px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">运动服</a></li>
+							<li><a href="list.html">运动鞋</a></li>
+							<li><a href="list.html">户外鞋</a></li>
+						</ul>
+					</li>
+					<li  class="disappear dis_li6">
+						<a href="list.html">皮具</a>
+						<span></span>
+						<ul style="position:fixed;left:705px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">皮带</a></li>
+							<li><a href="list.html">男包</a></li>
+							<li><a href="list.html">女包</a></li>
+						</ul>
+					</li>
+					<li  class="disappear dis_li7">
+						<a href="list.html">出行</a>
+						<span></span>
+						<ul style="position:fixed;left:795px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">拉杆箱</a></li>
+							<li><a href="list.html">休闲包</a></li>
+							<li><a href="list.html">收纳</a></li>
+							<li><a href="list.html">口罩</a></li>
+						</ul>
+					</li>
+					<li  class="disappear dis_li8">
+						<a href="list.html">个护</a>
+						<span></span>
+						<ul style="position:fixed;left:845px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">牙刷</a></li>
+							<li><a href="list.html">剃须刀</a></li>
+						</ul>
+					</li>
+					<li  class="disappear dis_li9">
+						<a href="list.html">美妆</a>
+						<span></span>
+						<ul style="position:fixed;left:915px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">洗护</a></li>
+							<li><a href="list.html">护肤</a></li>
+						</ul>
+					</li>
+				</div>
+				
+				<!-- 出现的 -->
+				<div class="app_last_li">
+					<li  class="appear app_li1">
+						<a href="list.html">居家</a>
+						<span></span>
+						<ul style="position:fixed;left:355px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">床品</a></li>
+							<li><a href="list.html">洗浴</a></li>
+							<li><a href="list.html">日用</a></li>
+							<li><a href="list.html">布艺</a></li>
+						</ul> 
+					</li>
+					<li  class="appear app_li2">
+						<a href="list.html">厨具</a>
+						<span></span>
+						<ul style="position:fixed;left:425px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">锅具</a></li>
+							<li><a href="list.html">刀具</a></li>
+							<li><a href="list.html">水具</a></li>
+							<li><a href="list.html">餐具</a></li>
+							<li><a href="list.html">厨用小件</a></li>
+						</ul>
+					</li>
+					<li  class="appear app_li3">
+						<a href="list.html">家具</a>
+						<span></span>
+						<ul style="position:fixed;left:495px;top:55px;z-index: 999999;">
+							<i></i>
+							<li><a href="list.html">工具</a></li>
+								<li><a href="list.html">灯具</a></li>
+							<li><a href="list.html">卫浴</a></li>
+							<li><a href="list.html">卧室</a></li>
+							<li><a href="list.html">客厅</a></li>
+							<li><a href="list.html">书房</a></li>
+							<li><a href="list.html">餐厅</a></li>
+						</ul>
+					</li>
+				</div>
+				<li class="nav_lastli">
+					<a href="list.html">更多<img src="../img/nav/nav-up.png"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<ul class="dis_ul1">
+		<i></i>
+		<li><a href="list.html">太阳镜</a></li>
+		<li><a href="list.html">旅行镜</a></li>
+		<li><a href="list.html">近视镜</a></li>
+	</ul>
+	<ul class="dis_ul2">
+		<i></i>
+		<li><a href="list.html">男装</a></li>
+		<li><a href="list.html">女装</a></li>
+		<li><a href="list.html">配饰</a></li>
+	</ul>
+	<ul class="dis_ul3">
+		<i></i>
+		<li><a href="list.html">母婴</a></li>
+		<li><a href="list.html">儿童</a></li>
+		<li><a href="list.html">书包</a></li>
+		<li><a href="list.html">亲子</a></li>
+		<li><a href="list.html">单车</a></li>
+	</ul>
+	<ul class="dis_ul4">
+		<i></i>
+		<li><a href="list.html">男鞋</a></li>
+		<li><a href="list.html">女鞋</a></li>
+		<li><a href="list.html">童鞋</a></li>
+	</ul>
+	<ul class="dis_ul5">
+		<i></i>
+		<li><a href="list.html">运动服</a></li>
+		<li><a href="list.html">运动鞋</a></li>
+		<li><a href="list.html">户外鞋</a></li>
+	</ul>
+	<ul class="dis_ul6">
+		<i></i>
+		<li><a href="list.html">皮带</a></li>
+		<li><a href="list.html">男包</a></li>
+		<li><a href="list.html">女包</a></li>
+	</ul>
+	<ul class="dis_ul7">
+		<i></i>
+		<li><a href="list.html">拉杆箱</a></li>
+		<li><a href="list.html">休闲包</a></li>
+		<li><a href="list.html">收纳</a></li>
+		<li><a href="list.html">口罩</a></li>
+	</ul>
+	<ul class="dis_ul8">
+		<i></i>
+		<li><a href="list.html">牙刷</a></li>
+		<li><a href="list.html">剃须刀</a></li>
+	</ul>
+	<ul class="dis_ul9">
+		<i></i>
+		<li><a href="list.html">洗护</a></li>
+		<li><a href="list.html">护肤</a></li>
+	</ul>
+	<ul class="app_ul1">
+		<i></i>
+		<li><a href="list.html">床品</a></li>
+		<li><a href="list.html">洗浴</a></li>
+		<li><a href="list.html">日用</a></li>
+		<li><a href="list.html">布艺</a></li>
+	</ul>
+	<ul class="app_ul2">
+		<i></i>
+		<li><a href="list.html">锅具</a></li>
+		<li><a href="list.html">刀具</a></li>
+		<li><a href="list.html">水具</a></li>
+		<li><a href="list.html">餐具</a></li>
+		<li><a href="list.html">厨用小件</a></li>
+	</ul>
+	<ul class="app_ul3">
+		<i></i>
+		<li><a href="list.html">工具</a></li>
+		<li><a href="list.html">灯具</a></li>
+		<li><a href="list.html">卫浴</a></li>
+		<li><a href="list.html">卧室</a></li>
+		<li><a href="list.html">客厅</a></li>
+		<li><a href="list.html">书房</a></li>
+		<li><a href="list.html">餐厅</a></li>
+	</ul>
+	
+	<!-- product 商品详情 -->
+	<div id="product">
+		<div class="product">
+			<div class="pro_top">
+				<a href="../index.html">首页</a> / 
+				<em>修身大衣77B1647360/1/2/3</em>
+				<span>百分时装 iBuyFun</span>
+				<i>9533859</i>
+				<a class="lx" href="###">联系客服</a>
+			</div>
+			<div class="pro_main">
+				<div class="pro_left">
+					<div class="big">
+						<img src="../img/product/1.jpg"/>
+						<img src="../img/product/2.jpg"/>
+						<img src="../img/product/3.jpg"/>
+						<img src="../img/product/4.jpg"/>
+						<img src="../img/product/5.jpg"/>
+						<div id="box"></div>
+					</div>
+					<div id="mark"></div>
+					<div class="small">
+						<a href="javascript:;"><img src="../img/product/1.jpg"/></a>
+						<a href="javascript:;"><img src="../img/product/2.jpg"/></a>
+						<a href="javascript:;"><img src="../img/product/3.jpg"/></a>
+						<a href="javascript:;"><img src="../img/product/4.jpg"/></a>
+						<a href="javascript:;"><img src="../img/product/5.jpg"/></a>
+					</div>
+					<div class="b_big">
+						<img src="../img/product/1.jpg"/>
+						<img src="../img/product/2.jpg"/>
+						<img src="../img/product/3.jpg"/>
+						<img src="../img/product/4.jpg"/>
+						<img src="../img/product/5.jpg"/>
+					</div>
+				</div>
+				<div class="pro_right">
+					<h3>修身大衣77B1647360/1/2/3</h3>
+					<p class="first_p">两粒扣长款大衣，修身立体剪裁</p>
+					<p class="line"></p>
+					<div>
+						<p>售价<em>¥ <span>699</span></em>生产周期：15天</p>
+						<p>颜色
+							<a class="images1 l" href="javascript:;">
+								<img src="../img/product/small1.png" alt="打不开此图片" title="橘红色"/>
+							</a>
+							<a class="images2" href="javascript:;">
+								<img src="../img/product/small2.png" alt="打不开此图片" title="墨绿色"/>
+							</a>
+							<a class="images3" href="javascript:;">
+								<img src="../img/product/small3.png" alt="打不开此图片" title="驼色"/>
+							</a>
+							<a class="images4" href="javascript:;">
+								<img src="../img/product/small4.png" alt="打不开此图片" title="黑色"/>
+							</a>
+						</p>
+						<p>尺寸
+							<a class="l mar_r" href="javascript:;">XS</a>
+							<a href="javascript:;">S</a>
+							<a href="javascript:;">M</a>
+							<a href="javascript:;">L</a>
+							<a href="javascript:;">XL</a>
+						</p>
+						<a href="javascript:;">查看尺码对照表</a>
+						<p class="n">数量
+							<span>
+								<a class="cut" href="javascript:;">-</a>
+								<span>1</span>
+								<a class="add" href="javascript:;">+</a>
+							</span>
+						</p>
+						<a class="addcar" href="javascript:;"><b></b>加入购物车</a>
+					</div>
+					<p>
+						<i>7天无忧退换</i>
+						<i>先行赔付</i>
+						<i>超时赔偿</i>
+						<i>全场包邮</i>
+					</p>
+				</div>
+				<div style="clear:both"></div>
+				<div class="pro_img">
+					<div class="top">
+						<a href="javascript:;" class="aa">商品信息</a>|<a href="javascript:;">评价详情 8</a>
+						<p></p>
+					</div>
+					<div class="pro">
+						<dl>
+							<dt>品牌名称</dt>
+							<dd>iBuyFun</dd>
+						</dl>
+						<dl>
+							<dt>商品名称</dt>
+							<dd>修身大衣77B1647360/1/2/3</dd>
+						</dl>
+						<dl>
+							<dt>颜色说明</dt>
+							<dd>黑色/驼色/墨绿色/橘红色</dd>
+						</dl>
+						<dl>
+							<dt>面料成分</dt>
+							<dd>B1635成分：60%羊毛40%聚酯纤维</dd>
+						</dl>
+						<dl>
+							<dt>洗涤方式</dt>
+							<dd>专业洗涤（干洗）</dd>
+						</dl>
+						<dl>
+							<dt>规格说明</dt>
+							<dd>XS(155/76A);S(160/80A);M(165/84A);L(165/88A);XL(170/92A)</dd>
+						</dl>
+						<dl>
+							<dt>产地</dt>
+							<dd>杭州</dd>
+						</dl>
+					</div>
+					<div class="pdu">
+						<p>多色大衣可选</p>
+						<img src="../img/product/show1.png" alt="打不开此图片" title="多色大衣"/>
+						<p>门襟两粒扣，简单大方</p>
+						<img src="../img/product/show2.png" alt="打不开此图片" title="门襟图片"/>
+						<p>简约翻驳领时尚百搭</p>
+						<img src="../img/product/show3.png" alt="打不开此图片" title="简约翻驳领图片"/>
+						<p>两侧装翻袋帅气利落</p>
+						<img src="../img/product/show4.png" alt="打不开此图片" title="两侧图片"/>
+						<p>斜门襟，下摆线条流畅</p>
+						<img src="../img/product/show5.png" alt="打不开此图片" title="下摆图片"/>
+						<p>H型下摆，后中开衩</p>
+						<img src="../img/product/show6.png" alt="打不开此图片" title="H型下摆图片"/>
+						<p>参考图片</p>
+						<img src="../img/product/show7.png" alt="打不开此图片" title="参考图片"/>
+						<p>参考数据</p>
+						<img src="../img/product/show8.png" alt="打不开此图片" title="参考数据"/>
+					</div>
+					<div class="question">
+						<span>常见问题</span>
+						<div>
+							<p>Q请问包邮吗？</p>
+							<p>A会配上环保纸盒包邮，寄出商品可享受包邮服务。</p>
+							<p>&nbsp;</p>
+							<p>Q多久可以送到？</p>
+							<p>A在您下单付款后，开始定制生产，15天内发货，在途1-3天。</p>
+							<p>&nbsp;</p>
+							<p>Q支持货到付款吗？</p>
+							<p>A很抱歉，平台现在仅支持在线支付，不支持货到付款。</p>
+							<p>&nbsp;</p>
+							<p>Q可以开发票吗？</p>
+							<p>A根据您的需求，可在申请开票后30天之内发送到。</p>
+							<p>&nbsp;</p>
+						</div>
+						<span>购买须知</span>
+						<div>
+							<p>01.商品选择搭配时，图片会将商品效果进行展示，不同显示设备会存在一定色差，最终请以实物为准。</p>
+							<p>02.商品均为标准尺码并配有相对应的尺码对照表供您参考。</p>
+							<p>03.商品均非现货，需要一定生产周期，具体请您查阅购买页面的"生产周期"提示。</p>
+							<p>04.商家开始确认生产，将根据您订单需求进行制作生产；故无法做任何修改及取消订单。</p>
+						</div>
+						<span>售后说明</span>
+						<div>
+							<p>01.自签收之日起7日内，您可在"我的订单"中申请退货退款；款项将原支付路径退回。</p>
+							<p>02.个性化定制商品（如签名、特殊材质、个性搭配等），非质量问题无法办理退换货。</p>
+							<p>03.办理退货时，请您务必确保商品原质原貌，包装吊牌完整、未经穿着使用。</p>
+							<p>04.如已开具发票，需将发票与商品一同寄回；如发票丢失或未寄回则无法为您办理退货退款。</p>
+							<p>05.尽管商家在努力控制定制服装的每一道工序，但是在制作和周转过程中，仍会有1%的可能性发生污损。如果发生这样的情况，商家将在发现污损的当天由客服人员与顾客联系。届时顾客有权取消订单，或延长十日用于商家为您重新定制服装。</p>
+							<p>06.商机原因（如发错货，商品质量问题等），顾客可以直接申请退货退款，选择顺丰上门取件，进行免费退货；不支持顺丰取件区域，可由顾客先行垫付，退货完毕后，必要平台将根据退货运单及费用凭证（如快递发票等）为顾客报销。</p>
+							<p>07.iBuyFun品牌商品，严格执行"国家服装类三包规定"。</p>
+						</div>
+					</div>
+					<div class="est">
+						<div class="satis">
+							<span class="goods_sta">商品满意度</span>
+							<span class="grade_mark">
+								<span class="grade_sta">4.9</span>
+								<span class="mark_sta">分</span>
+							</span>
+							<span class="evaluate">
+								已有
+								<span class="eval">8</span>
+								评价
+							</span>
+						</div>
+						<div class="evaluateuser">
+							<div class="eval_user">
+								<div class="eval_img">
+									<img src="../img/product/1.jpg" alt="打不开此头像" title="用户头像"/>
+								</div>
+								<div class="eval_content">
+									<h3 class="eval_cont">
+										<span class="eval_span">
+											<ul class="eval_ul">
+												<li class="eval_li">
+													<i></i>
+													<span>好评</span>
+												</li>
+											</ul>
+										</span>
+										<span class="eval_span1">来自淼****麻</span>
+									</h3>
+									<table class="eval_tab">
+										<tbody>
+											<tr>
+												<td colspan="3" class="eval_td">还不错</td>
+											</tr>
+											<tr>
+												<td colspan="3">...</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<div>
+														<span class="td_span">2016-12-22 10:24:38</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="evaluateuser">
+							<div class="eval_user">
+								<div class="eval_img">
+									<img src="../img/product/1.jpg" alt="打不开此头像" title="用户头像"/>
+								</div>
+								<div class="eval_content">
+									<h3 class="eval_cont">
+										<span class="eval_span">
+											<ul class="eval_ul">
+												<li class="eval_li">
+													<i></i>
+													<span>好评</span>
+												</li>
+											</ul>
+										</span>
+										<span class="eval_span1">来自淼****麻</span>
+									</h3>
+									<table class="eval_tab">
+										<tbody>
+											<tr>
+												<td colspan="3" class="eval_td">还不错</td>
+											</tr>
+											<tr>
+												<td colspan="3">...</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<div>
+														<span class="td_span">2016-12-22 10:24:38</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="evaluateuser">
+							<div class="eval_user">
+								<div class="eval_img">
+									<img src="../img/product/1.jpg" alt="打不开此头像" title="用户头像"/>
+								</div>
+								<div class="eval_content">
+									<h3 class="eval_cont">
+										<span class="eval_span">
+											<ul class="eval_ul">
+												<li class="eval_li">
+													<i></i>
+													<span>好评</span>
+												</li>
+											</ul>
+										</span>
+										<span class="eval_span1">来自淼****麻</span>
+									</h3>
+									<table class="eval_tab">
+										<tbody>
+											<tr>
+												<td colspan="3" class="eval_td">还不错</td>
+											</tr>
+											<tr>
+												<td colspan="3">...</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<div>
+														<span class="td_span">2016-12-22 10:24:38</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="evaluateuser">
+							<div class="eval_user">
+								<div class="eval_img">
+									<img src="../img/product/1.jpg" alt="打不开此头像" title="用户头像"/>
+								</div>
+								<div class="eval_content">
+									<h3 class="eval_cont">
+										<span class="eval_span">
+											<ul class="eval_ul">
+												<li class="eval_li">
+													<i></i>
+													<span>好评</span>
+												</li>
+											</ul>
+										</span>
+										<span class="eval_span1">来自淼****麻</span>
+									</h3>
+									<table class="eval_tab">
+										<tbody>
+											<tr>
+												<td colspan="3" class="eval_td">还不错</td>
+											</tr>
+											<tr>
+												<td colspan="3">...</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<div>
+														<span class="td_span">2016-12-22 10:24:38</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="evaluateuser">
+							<div class="eval_user">
+								<div class="eval_img">
+									<img src="../img/product/1.jpg" alt="打不开此头像" title="用户头像"/>
+								</div>
+								<div class="eval_content">
+									<h3 class="eval_cont">
+										<span class="eval_span">
+											<ul class="eval_ul">
+												<li class="eval_li">
+													<i></i>
+													<span>好评</span>
+												</li>
+											</ul>
+										</span>
+										<span class="eval_span1">来自淼****麻</span>
+									</h3>
+									<table class="eval_tab">
+										<tbody>
+											<tr>
+												<td colspan="3" class="eval_td">还不错</td>
+											</tr>
+											<tr>
+												<td colspan="3">...</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<div>
+														<span class="td_span">2016-12-22 10:24:38</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="evaluateuser">
+							<div class="eval_user">
+								<div class="eval_img">
+									<img src="../img/product/1.jpg" alt="打不开此头像" title="用户头像"/>
+								</div>
+								<div class="eval_content">
+									<h3 class="eval_cont">
+										<span class="eval_span">
+											<ul class="eval_ul">
+												<li class="eval_li">
+													<i></i>
+													<span>好评</span>
+												</li>
+											</ul>
+										</span>
+										<span class="eval_span1">来自淼****麻</span>
+									</h3>
+									<table class="eval_tab">
+										<tbody>
+											<tr>
+												<td colspan="3" class="eval_td">还不错</td>
+											</tr>
+											<tr>
+												<td colspan="3">...</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<div>
+														<span class="td_span">2016-12-22 10:24:38</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="evaluateuser">
+							<div class="eval_user">
+								<div class="eval_img">
+									<img src="../img/product/1.jpg" alt="打不开此头像" title="用户头像"/>
+								</div>
+								<div class="eval_content">
+									<h3 class="eval_cont">
+										<span class="eval_span">
+											<ul class="eval_ul">
+												<li class="eval_li">
+													<i></i>
+													<span>好评</span>
+												</li>
+											</ul>
+										</span>
+										<span class="eval_span1">来自淼****麻</span>
+									</h3>
+									<table class="eval_tab">
+										<tbody>
+											<tr>
+												<td colspan="3" class="eval_td">还不错</td>
+											</tr>
+											<tr>
+												<td colspan="3">...</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<div>
+														<span class="td_span">2016-12-22 10:24:38</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="evaluateuser">
+							<div class="eval_user">
+								<div class="eval_img">
+									<img src="../img/product/1.jpg" alt="打不开此头像" title="用户头像"/>
+								</div>
+								<div class="eval_content">
+									<h3 class="eval_cont">
+										<span class="eval_span">
+											<ul class="eval_ul">
+												<li class="eval_li">
+													<i></i>
+													<span>好评</span>
+												</li>
+											</ul>
+										</span>
+										<span class="eval_span1">来自淼****麻</span>
+									</h3>
+									<table class="eval_tab">
+										<tbody>
+											<tr>
+												<td colspan="3" class="eval_td">还不错</td>
+											</tr>
+											<tr>
+												<td colspan="3">...</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<div>
+														<span class="td_span">2016-12-22 10:24:38</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- footer -->
+	<div id="footer">
+		<div class="footer">
+			<div class="left fl">
+				<p><a href="javascript:;">关于必要</a>|<a href="javascript:;">加入必要</a>|<a href="javascript:;">联系我们</a>|<a href="javascript:;">官网微博</a></p>
+				<span>&copy;BIYAO.COM 2015 版权所有</span>
+				<span><img src="../img/soft.jpg" alt="打不开此图片" title="gongan"/>粤公网安备44049102496139号 粤ICP备13088531号</span>
+			</div>
+			<div class="right fr">
+				<dl class="app fl">
+					<dt></dt>
+					<dd>
+						<p>扫描二维码下载</p>
+						<p>必要手机客户端</p>
+					</dd>
+				</dl>
+				<dl class="wx fl">
+					<dt></dt>
+					<dd>
+						<p>扫描二维码下载</p>
+						<p>必要手机客户端</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+
+	<div id="back">
+		<span><img src="../img/ewm1.bmp"/><img src="../img/ewm2.bmp"/></span>
+		<p>︿</p>
+		<div><img src="../img/b_ewm.bmp"/></div>
+	</div>
+</body>
+</html>
